@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 Project</title>
+    <meta description="This is the project for WDD231">
+    <meta author="Tyson Wilde">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+
+
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/taco.svg" alt="Site Logo" width="512" height="512">
+        <span>Tyson Wilde</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open Navigation Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="text">
+            <h2>About Me</h2>
+            <p>My name is Tyson Wilde. I was born in High Level, Alberta,Canada. I currently live in Lethbridge,
+                Alberta, with my family. My beautiful wife and son. I am currently working at a coal mine in the
+                province, British Columbia.
+            </p>
+        </section>
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <picture>
+                <source srcset="images/ty.jpg" media="(max-width: 5400px)">
+                <source srcset="images/ty.jpg" media="(max-width: 405px)">
+                <img src="images/ty.jpg" alt="Photo of Tyson Wilde">
+            </picture>
+        </section>
+        <section class="course">
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all-btn">All Courses</button>
+                <button id="wdd-btn">WDD Courses</button>
+                <button id="cse-btn">CSE Courses</button>
+            </div>
+
+            <p id="credit-total"></p>
+
+
+            <div id="course-container"></div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="social">
+            <a href="www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a>
+            <a href="www.instagram.com" target="_blank"><img src="images/instagram-square.svg" alt="" width="16"
+                    height="16"></a>
+
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="" width="16"
+                    height="16"></a>
+            <a href="https://github.com/TysonJay00/wdd231" target="_blank"><img src="images/github.svg" alt=""
+                    width="16" height="16"></a>
+        </div>
+        <p>&copy; <span>2026 Tyson Wilde. Canada</span></p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

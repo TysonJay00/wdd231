@@ -1,0 +1,64 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        width: 100%;
+    }
+
+
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+
+    .hamburger {
+        display: none;
+
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: solid 1px white;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+        
+        
+
+    }
+
+    .text {
+        grid-column: 1;
+
+    }
+
+    .photo {
+        grid-column: 2;
+
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .course {
+        grid-column: 1 / 3;
+    }
+
+    
+}
