@@ -1,0 +1,28 @@
+{
+    "name": "Wilde",
+    "date": "May 27, 2026",
+    "numberofrecords": 4,
+    "ifvisitedbybishop": true,
+    "familymember": [
+        {
+            "name": "Levi",
+            "gender": "male",
+            "birthdate": "november 20, 1990"
+        },
+        {
+            "name": "Christine",
+            "gender": "female",
+            "birthdate": "june 4, 1991"
+        },
+        {
+            "name": "Jaxon",
+            "gender": "male",
+            "birthdate": "august 15, 2011"
+        },
+        {
+            "name": "Claire",
+            "gender": "female",
+            "birthdate": "February 2, 2014"
+        }
+    ]
+}
