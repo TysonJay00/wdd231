@@ -1,0 +1,65 @@
+[
+    {
+        "companyname": "Aic, Aic, Baby",
+        "address": "C.60 S, Centro, 97000, Merida",
+        "phonenumber": 529994563214,
+        "websiteurl": "http://www.aicbaby.mx",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddXzIEsIY54GO7zGUpCgLnK2u2APbuOLwcA2upr9uxw&s=10",
+        "membershiplevel": 3,
+        "otherinfo": "Freeze your brain!"
+    },
+    {
+        "companyname": "Abogados de Ramirez ",
+        "address": "C.106 681, entre 117 diagonal y 117 a diagonal, Merida",
+        "phonenumber": 529998536789,
+        "websiteurl": "http://www.ramirezabogados.mx",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02aZR_V92ls5lQ6cU0KT3vyJwx80QT4WJ7IReO-vD7w&s=10",
+        "membershiplevel": 1,
+        "otherinfo": "Abogados para todas sus necesiades!"
+    },
+    {
+        "companyname": "Little Ceaser's",
+        "address": "C. 51 272, entre Calle 46, Francisco de Montejo, Mérida",
+        "phonenumber": 529999192000,
+        "websiteurl": "http://www.littlecaesars.com.mx/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPeS_F8gpSMiuAJ6xZFF3KegHhpmeWyqrVFdEzlyzwmA&s=10",
+        "membershiplevel": 1,
+        "otherinfo": "Hot and Ready!"
+    },
+    {
+        "companyname": "Parque Zoológico Animaya",
+        "address": "C. 60 866, Cd Caucel, Mérida",
+        "phonenumber": 529995935670,
+        "websiteurl": "http://www.merida.gob.mx/Animaya/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-gA43jGd6rY4jX2li9iWX9yHY_c2O7AbfMmTP5lKXw&s=10",
+        "membershiplevel": 2,
+        "otherinfo": "¡Ven a ver a tus animales favoritos!"
+    },
+    {
+        "companyname": "Macroplaza",
+        "address": "C. 33, Colonia itzimna, Polígono 108, Mérida",
+        "phonenumber": 529991961685,
+        "websiteurl": "http://www.macroplazamerida.mx/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgnb32PHP-MfIVKM3mP9bQHJPI4HpS5AmMFYgt9a90gA&s=10",
+        "membershiplevel": 1,
+        "otherinfo": "¡Centros comerciales con cine!"
+    },
+    {
+        "companyname": "Texas Roadhouse Mérida Montejo",
+        "address": "C. 50 340, entre 21 y 23, Nueva Revolución, Xcanatún",
+        "phonenumber": 529994168887,
+        "websiteurl": "http://trhmexico.com/",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmedk0PWU_txL0aTlgJDMAOPlOSeH8fAnD9o0XqFFh6A&s=10",
+        "membershiplevel": 2,
+        "otherinfo": "Texas themed Steak!"
+    },
+    {
+        "companyname": "Fauces Burger",
+        "address": "108, Manzana nuero 127R, Mérida,",
+        "phonenumber": 529991005451,
+        "websiteurl": "https://menu.fu.do/faucesburger",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSI29cEykPuD2Np6JaAcoKSL9JCfbuehwUypX4FjAHA&s=10",
+        "membershiplevel": 3,
+        "otherinfo": "Burgers and Shakes! "
+    }
+]

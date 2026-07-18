@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" href="/favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Merida</title>
@@ -16,9 +16,70 @@
     <meta property="og:url" content="https://tysonjay00.github.io/wdd231/chamber/directory.html">
     <meta property="og:type" content="website">
 
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+
+
 </head>
 
 <body>
+    <header>
+        <img src="images/castle.svg" alt="Site Logo" width="512" height="512">
+        <span>Merida Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open Navigation Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Directory</h1>
+
+        <div class="view-buttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+
+        <div id="directory" class="grid"></div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="" width="16" height="16"></a>
+            <a href="www.instagram.com" target="_blank"><img src="images/instagram-square.svg" alt="" width="16"
+                    height="16"></a>
+
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="" width="16"
+                    height="16"></a>
+            <a href="https://github.com/TysonJay00/wdd231" target="_blank"><img src="images/github.svg" alt=""
+                    width="16" height="16"></a>
+        </div>
+        <div class="left">
+            <p>Merida Chamber of Commerce</p>
+            <p>C.60, Centro,</p>
+            <p>Merida, Yuc., Mexico, 97000</p>
+            <p>info@Meridachamber.mx</p>
+            <p>+52 999 928 4536</p>
+        </div>
+
+        <div class="right">
+            <p>WDD231 Class Project</p>
+            <p>Tyson Wilde</p>
+            <p>&copy; <span>2026 Merida Chamber of Commerce</span></p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
 
 </body>
 
