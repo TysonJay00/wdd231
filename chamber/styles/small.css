@@ -167,6 +167,7 @@ footer p {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
     gap: 1rem;
+    min-height: 600px;
 }
 
 .card {
