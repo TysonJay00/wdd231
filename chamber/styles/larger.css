@@ -9,56 +9,27 @@
 
 
 
-    header {
-        grid-template-columns: 24px auto;
-    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        max-width: 1100px;
+        margin: 0 auto;
 
+
+    }
 
     .hamburger {
         display: none;
-
     }
 
     .navigation {
         display: block;
-        border-bottom: solid 1px white;
+
     }
 
     .navigation ul {
         display: flex;
+        justify-content: center;
     }
-
-    .navigation a {
-        border: none;
-    }
-
-    main {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1rem;
-
-
-
-    }
-
-    .text {
-        grid-column: 1;
-
-    }
-
-    .photo {
-        grid-column: 2;
-
-    }
-
-    .photo img {
-        width: 100%;
-        height: auto;
-    }
-
-    .course {
-        grid-column: 1 / 3;
-    }
-
-
 }

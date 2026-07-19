@@ -14,7 +14,12 @@ fetch("data/members.json")
             
             <div class="card-info"></div>
 
-            <img src="${company.image}" alt="${company.companyname} logo" loading="lazy">
+            <img
+                src="${company.image}" 
+                alt="${company.companyname} logo" 
+                width="90"
+                height="90"
+                loading="lazy">
 
             <div class="details">
                <p><strong>PHONE:</strong> ${company.phonenumber}</p>
