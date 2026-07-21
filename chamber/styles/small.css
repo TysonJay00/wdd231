@@ -101,24 +101,22 @@ h1 {
 footer {
     background-color: #eee;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     padding: .5rem 1rem;
-    min-height: 120px;
+    gap: 1rem;
 
 
 }
+
 
 .left,
-.social,
 .right {
-    flex: 1;
+    text-align: center;
 }
 
-.left {
-    text-align: left;
-    ;
-}
+
 
 .social {
     display: flex;
@@ -126,8 +124,21 @@ footer {
     column-gap: 8px;
 }
 
-.right {
-    text-align: right;
+@media (min-width: 768px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .left {
+        text-align: left;
+
+    }
+
+    .right {
+        text-align: right;
+    }
 }
 
 .social a {
@@ -219,4 +230,24 @@ footer p {
     justify-content: center;
     gap: 1rem;
     margin: 1rem 0;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.list .card {
+    display: block;
+    padding: 1rem;
+
+}
+
+.list .card img {
+    display: none;
+}
+
+.list .card-info {
+    display: block;
 }

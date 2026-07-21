@@ -1,4 +1,6 @@
 const directory = document.getElementById("directory");
+const gridButton = document.getElementById("grid");
+const listButton = document.getElementById("list");
 
 fetch("data/members.json")
     .then(response => response.json())
@@ -10,7 +12,7 @@ fetch("data/members.json")
 
             card.innerHTML = `
             <h2>${company.companyname}</h2>
-            <p class="tagline">${company.otherinfo}<p>
+            <p class="tagline">${company.otherinfo}</p>
             
             <div class="card-info"></div>
 
@@ -37,3 +39,13 @@ fetch("data/members.json")
             directory.appendChild(card);
         })
     })
+
+gridButton.addEventListener("click", () => {
+    directory.classList.add("grid");
+    directory.classList.remove("list");
+})
+
+listButton.addEventListener("click", () => {
+    directory.classList.add("list");
+    directory.classList.remove("grid");
+})
