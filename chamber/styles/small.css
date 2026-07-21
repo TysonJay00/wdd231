@@ -87,6 +87,11 @@ header span {
     background-color: gold;
 }
 
+.navigation a.active {
+    border-bottom: 4px solid gold;
+    font-weight: bold;
+}
+
 h1 {
     margin-left: 9px;
     text-align: left;
