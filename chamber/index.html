@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="favicon1.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merida</title>
+    <meta name="description" content="This is the chamber of commerce project for WDD231">
+    <meta name="author" content="Tyson Wilde">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <meta property="og:description"
+        content="Chamber of Commerce for the city of Merida, Mexico. For those wanting to find business oportunities or discover new things about the city, it's all here.">
+    <meta property="og:image" content="https://tysonjay00.github.io/wdd231/chamber/images/merida-og-image.jpeg">
+    <meta property="og:title" content="Chamber of Commerce of Merida, Mexico">
+    <meta property="og:url" content="https://tysonjay00.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/castle.svg" alt="Site Logo" width="512" height="512">
+        <span>Merida Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open Navigation Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-small-m.webp" media="(max-width: 768px)">
+                <img src="images/hero-large-m.jpg" class="big-img" alt="Merida, Mexico">
+            </picture>
+
+            <aside class="cta"> join now!</aside>
+
+            <section class="current-event(s)"></section>
+
+            <section class="weather">
+                <div class="card-w">
+                    <h2 id="town"></h2>
+                    <img id="graphic" src="" alt="">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
+            </section>
+            <section class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div id="forecast"></div>
+            </section>
+
+            <section class="spotlights">
+                <div id="directory" class="grid"></div>
+            </section>
+
+
+
+
+
+        </div>
+    </main>
+
+    <footer>
+
+        <div class="left">
+            <p>Merida Chamber of Commerce</p>
+            <p>C.60, Centro,</p>
+            <p>Merida, Yuc., Mexico, 97000</p>
+            <p>info@Meridachamber.mx</p>
+            <p>+52 999 928 4536</p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-square.svg" alt="instagram"
+                    width="16" height="16"></a>
+
+            <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linkedin"
+                    width="16" height="16"></a>
+            <a href="https://github.com/TysonJay00/wdd231" target="_blank"><img src="images/github.svg" alt="github"
+                    width="16" height="16"></a>
+        </div>
+
+        <div class="right">
+            <p>WDD231 Class Project</p>
+            <p>Tyson Wilde</p>
+            <p>&copy; <span>2026 Merida Chamber of Commerce</span></p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@
         "phonenumber": 529994563214,
         "websiteurl": "http://www.aicbaby.mx",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddXzIEsIY54GO7zGUpCgLnK2u2APbuOLwcA2upr9uxw&s=10",
-        "membershiplevel": 3,
+        "membershiplevel": "Silver",
         "otherinfo": "Freeze your brain!"
     },
     {
@@ -14,7 +14,7 @@
         "phonenumber": 529998536789,
         "websiteurl": "http://www.ramirezabogados.mx",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR02aZR_V92ls5lQ6cU0KT3vyJwx80QT4WJ7IReO-vD7w&s=10",
-        "membershiplevel": 1,
+        "membershiplevel": "Gold",
         "otherinfo": "Abogados para todas sus necesiades!"
     },
     {
@@ -23,7 +23,7 @@
         "phonenumber": 529999192000,
         "websiteurl": "http://www.littlecaesars.com.mx/",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPeS_F8gpSMiuAJ6xZFF3KegHhpmeWyqrVFdEzlyzwmA&s=10",
-        "membershiplevel": 1,
+        "membershiplevel": "Gold",
         "otherinfo": "Hot and Ready!"
     },
     {
@@ -32,7 +32,7 @@
         "phonenumber": 529995935670,
         "websiteurl": "http://www.merida.gob.mx/Animaya/",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTs-gA43jGd6rY4jX2li9iWX9yHY_c2O7AbfMmTP5lKXw&s=10",
-        "membershiplevel": 2,
+        "membershiplevel": "Gold",
         "otherinfo": "¡Ven a ver a tus animales favoritos!"
     },
     {
@@ -41,7 +41,7 @@
         "phonenumber": 529991961685,
         "websiteurl": "http://www.macroplazamerida.mx/",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgnb32PHP-MfIVKM3mP9bQHJPI4HpS5AmMFYgt9a90gA&s=10",
-        "membershiplevel": 1,
+        "membershiplevel": "Silver",
         "otherinfo": "¡Centros comerciales con cine!"
     },
     {
@@ -50,7 +50,7 @@
         "phonenumber": 529994168887,
         "websiteurl": "http://trhmexico.com/",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmedk0PWU_txL0aTlgJDMAOPlOSeH8fAnD9o0XqFFh6A&s=10",
-        "membershiplevel": 2,
+        "membershiplevel": "Silver",
         "otherinfo": "Texas themed Steak!"
     },
     {
@@ -59,7 +59,7 @@
         "phonenumber": 529991005451,
         "websiteurl": "https://menu.fu.do/faucesburger",
         "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlSI29cEykPuD2Np6JaAcoKSL9JCfbuehwUypX4FjAHA&s=10",
-        "membershiplevel": 3,
+        "membershiplevel": "Silver",
         "otherinfo": "Burgers and Shakes! "
     }
 ]
