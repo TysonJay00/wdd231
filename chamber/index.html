@@ -11,6 +11,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
     <meta property="og:description"
@@ -50,20 +51,30 @@
     <main>
         <h1>Home</h1>
 
-        <div class="hero">
-            <picture>
-                <source srcset="images/hero-small-m.webp" media="(max-width: 768px)">
-                <img src="images/hero-large-m.jpg" class="big-img" alt="Merida, Mexico">
-            </picture>
+        <div class="home-grid">
 
-            <aside class="cta"> join now!</aside>
+            <section class="hero">
+                <picture>
+                    <source srcset="images/hero-small-m.jpg" media="(max-width: 768px)">
+                    <img src="images/hero-large.m.jpg" class="big-img" alt="Merida, Mexico" fetchpriority="high">
+                </picture>
+
+
+            </section>
+
+            <section class="spotlights">
+                <h2>Spotlights!</h2>
+                <div id="directory" class="grid"></div>
+                <a class="cta" href="join.html">Join now!</a>
+            </section>
 
             <section class="current-event(s)"></section>
 
             <section class="weather">
                 <div class="card-w">
                     <h2 id="town"></h2>
-                    <img id="graphic" src="" alt="">
+                    <p>Current Weather</p>
+                    <img id="graphic" src="" alt="Weather icon" width="80" height="80">
                     <p id="description"></p>
                     <p id="temperature"></p>
                 </div>
@@ -72,14 +83,6 @@
                 <h2>3-Day Forecast</h2>
                 <div id="forecast"></div>
             </section>
-
-            <section class="spotlights">
-                <div id="directory" class="grid"></div>
-            </section>
-
-
-
-
 
         </div>
     </main>

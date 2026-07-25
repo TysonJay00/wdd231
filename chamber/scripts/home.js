@@ -1,3 +1,5 @@
+const cta = document.querySelector(".cta");
+
 fetch("data/members.json")
     .then(response => response.json())
     .then(companies => {
@@ -34,7 +36,7 @@ fetch("data/members.json")
             </div>
             `;
 
-            document.querySelector(".spotlights").appendChild(card);
+            document.querySelector("#directory").appendChild(card);
         })
     })
 /* shufflle the array */
@@ -50,3 +52,7 @@ function shuffle(array) {
     return shuffled;
 
 }
+
+cta.addEventListener("click", () => {
+    window.location.href = "join.html";
+});
