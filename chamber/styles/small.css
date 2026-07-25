@@ -275,8 +275,7 @@ footer p {
     padding: 1rem;
 }
 
-.weather,
-.forecast {
+.weather {
     border: 1px solid gray;
     border-radius: 10px;
     background: #f5f5f5;
@@ -295,9 +294,6 @@ footer p {
     min-height: 260px;
 }
 
-.card-w {
-    min-height: 230px;
-}
 
 .card-w {
     border: 1px solid grey;
@@ -306,6 +302,7 @@ footer p {
     text-align: center;
     margin-right: auto;
     width: 100%;
+    min-height: 230px;
 
 }
 
@@ -335,11 +332,11 @@ footer p {
 
 .forecast {
     border: 1px solid grey;
-    background-color: #f5f5f5;
     border-radius: 10px;
+    background: #f5f5f5;
+    padding: 1rem;
     text-align: center;
     width: 100%;
-    margin-left: auto;
 }
 
 
@@ -353,21 +350,20 @@ footer p {
     flex-direction: column;
 }
 
+.spotlights h2 {
+    color: #2a3bdb;
+    margin: .3rem 0;
+}
+
+.spotlights .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
 .spotlights .card {
     width: 100%;
     padding: 1rem;
-    margin-bottom: 1rem;
-}
-
-.spotlights img {
-    max-width: 100%;
-    height: auto;
-}
-
-.spotlights h2 {
-    color: #2a3bdb;
-    margin: .3rem 0;
 }
 
 .details a,
@@ -379,7 +375,7 @@ footer p {
 
 img {
     max-width: 100%;
-    height: auto;
+
 }
 
 .cta {
@@ -393,6 +389,9 @@ img {
     font-weight: bold;
     margin-top: 1rem;
     text-transform: capitalize;
+    display: inline-block;
+    text-decoration: none;
+
 
 }
 
@@ -404,4 +403,16 @@ img {
 
 .cta:active {
     transform: scale(0.98);
+}
+
+#town {
+    min-height: 28px;
+}
+
+#description {
+    min-height: 20px;
+}
+
+#temperature {
+    min-height: 38px;
 }
