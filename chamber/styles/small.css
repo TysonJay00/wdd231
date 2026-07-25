@@ -276,22 +276,20 @@ footer p {
 }
 
 .weather {
+    grid-column: 1;
+    width: 100%;
     border: 1px solid gray;
     border-radius: 10px;
     background: #f5f5f5;
     padding: 1rem;
+    min-height: 260px;
 }
 
 .hero,
 .spotlights,
-.weather,
 .forecast {
     grid-column: 1;
     width: 100%;
-}
-
-.weather {
-    min-height: 260px;
 }
 
 
