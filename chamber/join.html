@@ -76,49 +76,52 @@
 
                                 <label>
                                         Email
-                                        <input type="email" name="email" id="email" title="Your email" required>
+                                        <input type="email" name="email" id="email" title="Your email address" required
+                                                autocomplete="email" placeholder="name@example.com">
                                 </label>
 
                                 <label>
                                         Cell Phone
-                                        <input type="tel" name="phone" id="phone number" title="Your phonenumber">
+                                        <input type="tel" name="phone" id="phone" required autocomplete="tel"
+                                                title="Your mobile phone number">
                                 </label>
 
                                 <label>
                                         Business/Organization Name
                                         <input type="text" name="organization" id="organization" required
-                                                autocomplete="organization" tite="Your business/organization name">
+                                                autocomplete="organization" title="Your business/organization name">
                                 </label>
 
                                 <h2>Select Membership Level</h2>
 
                                 <label>
-                                        <input type="radio" name="Membership" value="Non Profit" checked>
+                                        <input type="radio" name="membership" value="np" checked>
                                         Non Profit
                                 </label>
 
                                 <label>
-                                        <input type="radio" name="Membership" value="Bronze">
+                                        <input type="radio" name="membership" value="bronze">
                                         Bronze
                                 </label>
 
                                 <label>
-                                        <input type="radio" name="Membership" value="Silver">
+                                        <input type="radio" name="membership" value="silver">
                                         Silver
                                 </label>
 
                                 <label>
-                                        <input type="radio" name="Membership" value="Gold">
+                                        <input type="radio" name="membership" value="gold">
                                         Gold
                                 </label>
 
                                 <h2>Description</h2>
 
                                 <label for="description">Describe your business/organization</label>
-                                <textarea id="description" name="description" rows="5" cols="40"></textarea>
+                                <textarea id="description" name="description" rows="5" cols="40"
+                                        title="Describe your business/organization"></textarea>
 
-                                <h2>Timestamp</h2>
-                                <label>Date <input type="date" name="date" required></label>
+                                <input type="hidden" name="timestamp" id="timestamp">
+
 
                                 <input type="submit" value="Submit">
 
@@ -171,6 +174,9 @@
                         <p id="modalContent"></p>
                         <button id="closeModal">Close</button>
                 </dialog>
+                <script>
+                        document.getElementById("timestamp").value = new Date().toISOString();
+                </script>
 
         </main>
 

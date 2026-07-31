@@ -8,6 +8,6 @@ document.querySelector("#results").innerHTML = `
     <p>Your Phone: ${info.get("phone")}</p>
     <p>Your Email: ${info.get("email")}</p>
     <p>Your Business/Organization: ${info.get("organization")}</p>
-    <p>Membership Level: ${info.get("Membership")}</p>
+    <p>Membership Level: ${info.get("membership")}</p>
     <p>Submitted: ${timestamp.toLocaleString()}</p>
 `;
