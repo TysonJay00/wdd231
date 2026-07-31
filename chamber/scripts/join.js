@@ -5,10 +5,16 @@ const title = document.querySelector('#modalTitle')
 const content = document.querySelector('#modalContent')
 const closeBtn = document.querySelector('#closeModal')
 
+const timestampField = document.querySelector("#timestamp");
 
+if (timestampField) {
+    timestampField.value = new Date().toISOString();
+}
 
+if (modal && closeBtn) {
+    closeBtn.addEventListener('click', () => modal.close());
+}
 
-closeBtn.addEventListener('click', () => modal.close())
 
 const membershipInfo = {
     nonprofit: {
