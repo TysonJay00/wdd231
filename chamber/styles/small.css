@@ -414,3 +414,135 @@ img {
 #temperature {
     min-height: 38px;
 }
+
+/*********************** join ********************* */
+
+form {
+    margin: 1rem 2%;
+}
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: #2a3bdb;
+    padding-top: .2rem;
+}
+
+form h3 {
+    font-size: .9rem;
+    color: black;
+    margin: 1.5rem 0 .2rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select,
+form textarea {
+    display: block;
+    margin: .1rem 0 1rem 0;
+    padding: .3rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    border-left-width: 5px;
+    border-left-color: #2a3bdb;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2a3bdb;
+    width: 250px;
+}
+
+input:required {
+    border-left-color: gold;
+}
+
+input:focus {
+    border-left-color: black;
+    outline: none;
+}
+
+input:required:valid {
+    border-left-color: green;
+}
+
+input[type=submit] {
+    border: none;
+    text-align: center;
+    background-color: #2a3bdb;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input:hover {
+    background-color: gold;
+    transform: scale(1.03);
+
+}
+
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #3D405B;
+}
+
+#results {
+    background-color: #F4F1DE;
+    padding: 0 1rem;
+    border: 1px solid #E07A5F;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .join-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .join-layout h2 {
+        color: #2a3bdb;
+        margin: .3rem 0;
+    }
+
+
+    .membership-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .membership-card {
+        border: 2px solid #2a3bdb;
+        border-radius: 10px;
+        padding: 1rem;
+        background: #f5f5f5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+
+    
+    }
+
+    .membership-card h2 {
+        color: #2a3bdb;
+        margin-top: 0;
+    }
+
+    .membership-card button {
+        background: #2a3bdb;
+        color: white;
+        border: none;
+        padding: .75rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .membership-card button:hover {
+        background-color: gold;
+        color: black;
+    }
+
+
+}

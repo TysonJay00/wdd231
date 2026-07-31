@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <link rel="icon" href="favicon1.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Merida</title>
+        <meta name="description" content="This is the chamber of commerce project for WDD231">
+        <meta name="author" content="Tyson Wilde">
+
+        <link rel="pre
+        connect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <meta property="og:description"
+                content="Chamber of Commerce for the city of Merida, Mexico. For those wanting to find business oportunities or discover new things about the city, it's all here.">
+        <meta property="og:image" content="https://tysonjay00.github.io/wdd231/chamber/images/merida-og-image.jpeg">
+        <meta property="og:title" content="Chamber of Commerce of Merida, Mexico">
+        <meta property="og:url" content="https://tysonjay00.github.io/wdd231/chamber/directory.html">
+        <meta property="og:type" content="website">
+
+
+        <link rel="stylesheet" href="styles/small.css">
+        <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/directory.js" defer></script>
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/join.js" defer></script>
+
+
+</head>
+
+<body>
+        <header>
+                <img src="images/castle.svg" alt="Site Logo" width="512" height="512">
+                <span>Merida Chamber of Commerce</span>
+                <button id="ham-btn" class="hamburger" aria-label="Open Navigation Menu"></button>
+        </header>
+        <nav id="nav-bar" class="navigation">
+                <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="directory.html" class="active">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                </ul>
+        </nav>
+        <main>
+                <h1>Join</h1>
+
+                <div class="join-layout">
+
+
+                        <form method="GET" action="thankyou.html" class="designOne">
+
+                                <label>
+                                        First Name
+                                        <input type="text" name="first" required autocomplete="given-name">
+                                </label>
+
+                                <label>
+                                        Last Name
+                                        <input type="text" name="last" required autocomplete="family-name">
+                                </label>
+
+                                <label>
+                                        Organizational Title
+                                        <input type="text" name="title" required autocomplete="organization-title"
+                                                pattern="[A-Za-z\s-]{7,}">
+                                </label>
+
+                                <label>
+                                        Email
+                                        <input type="email" name="email" required>
+                                </label>
+
+                                <label>
+                                        Cell Phone
+                                        <input type="tel" name="phone">
+                                </label>
+
+                                <label>
+                                        Business/Organization Name
+                                        <input type="text" name="organization" required autocomplete="organization">
+                                </label>
+
+                                <h3>Select Membership Level</h3>
+
+                                <label>
+                                        <input type="radio" name="Membership" value="Non Profit" checked>
+                                        Non Profit
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="Membership" value="Bronze">
+                                        Bronze
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="Membership" value="Silver">
+                                        Silver
+                                </label>
+
+                                <label>
+                                        <input type="radio" name="Membership" value="Gold">
+                                        Gold
+                                </label>
+
+                                <h3>Description</h3>
+
+                                <label for="description">
+                                        Describe your business/organization
+                                        <textarea id="description" name="description" rows="5" cols="40"></textarea>
+                                </label>
+
+                                <h3>Timestamp</h3>
+                                <label>Date <input type="date" name="date" required></label>
+
+                                <input type="submit" value="Submit">
+
+                        </form>
+
+
+
+                        <aside class="membership-cards">
+
+                                <h2>Membership Info</h2>
+
+                                <section class="membership-card">
+                                        <h2>Non Profit</h2>
+                                        <p>Ideal for nonprofit organizations</p>
+                                        <button type="button" class="info-btn" data-level="nonprofit">
+                                                Learn More
+                                        </button>
+                                </section>
+
+                                <section class="membership-card">
+                                        <h2>Bronze</h2>
+                                        <p>Basic membership benefits</p>
+                                        <button type="button" class="info-btn" data-level="bronze">
+                                                Learn More
+                                        </button>
+                                </section>
+
+                                <section class="membership-card">
+                                        <h2>Silver</h2>
+                                        <p>Additional advertising opportunities</p>
+                                        <button type="button" class="info-btn" data-level="silver">
+                                                Learn More
+                                        </button>
+                                </section>
+
+                                <section class="membership-card">
+                                        <h2>Gold</h2>
+                                        <p>Premium membership package</p>
+                                        <button type="button" class="info-btn" data-level="gold">
+                                                Learn More
+                                        </button>
+                                </section>
+
+                        </aside>
+
+                </div>
+
+                <dialog id="membershipModal">
+                        <h2 id="modalTitle"></h2>
+                        <p id="modalContent"></p>
+                        <button id="closeModal">Close</button>
+                </dialog>
+
+        </main>
+
+
+        <footer>
+
+                <div class="left">
+                        <p>Merida Chamber of Commerce</p>
+                        <p>C.60, Centro,</p>
+                        <p>Merida, Yuc., Mexico, 97000</p>
+                        <p>info@Meridachamber.mx</p>
+                        <p>+52 999 928 4536</p>
+                </div>
+
+                <div class="social">
+                        <a href="www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                                        width="16" height="16"></a>
+                        <a href="www.instagram.com" target="_blank"><img src="images/instagram-square.svg"
+                                        alt="instagram" width="16" height="16"></a>
+
+                        <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg"
+                                        alt="linkedin" width="16" height="16"></a>
+                        <a href="https://github.com/TysonJay00/wdd231" target="_blank"><img src="images/github.svg"
+                                        alt="github" width="16" height="16"></a>
+                </div>
+
+                <div class="right">
+                        <p>WDD231 Class Project</p>
+                        <p>Tyson Wilde</p>
+                        <p>&copy; <span>2026 Merida Chamber of Commerce</span></p>
+                        <p>Last modified: <span id="lastModified"></span></p>
+                </div>
+
+        </footer>
+
+</body>
+
+</html>

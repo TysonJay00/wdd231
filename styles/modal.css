@@ -1,0 +1,15 @@
+#openButton {
+    background-color: aqua;
+}
+
+#courseDetails {
+    background-color: lavender;
+}
+
+#closeButton {
+    background-color: violet;
+}
+
+::backdrop {
+    background-color: rga(255, 128, 0, 0.5);
+}

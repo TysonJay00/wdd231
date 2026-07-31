@@ -13,8 +13,10 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/course.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
 
-    <meta property="og:description" content="View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.">
+    <meta property="og:description"
+        content="View the latest news and breaking news today for U.S., world, weather, entertainment, politics and health at CNN.com.">
     <meta property="og:image" content="https://media.cnn.com/api/v1/images/cnn/cnn-placeholder-image.jpeg">
     <meta property="og:title" content="Breaking News, Latest News and Videos | CNN">
     <meta property="og:url" content="https://www.cnn.com">
@@ -22,6 +24,7 @@
 
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/modal.css">
 
 
 </head>
@@ -69,6 +72,14 @@
 
             <div id="course-container"></div>
         </section>
+        <button id="openButton1">Apples</button>
+        <button id="openButton2">oranges</button>
+        <button id="openButton3">Bananas</button>
+
+        <dialog id="courseDetails">
+            <div></div>
+            <button id="closeButton">Close</button>
+        </dialog>
 
 
     </main>
