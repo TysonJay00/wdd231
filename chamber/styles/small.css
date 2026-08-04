@@ -571,7 +571,7 @@ input:-webkit-autofill {
     background-color: #eee;
     border-radius: 8px;
     overflow: hidden;
-
+    min-height: 1100px;
     display: grid;
     grid-template-areas:
         "name"
