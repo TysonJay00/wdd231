@@ -537,26 +537,19 @@ input:-webkit-autofill {
         padding: 1rem;
         background: #f5f5f5;
         box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-
-
     }
 
     .membership-card h2 {
         color: #2a3bdb;
-        margin-top: 0;
     }
 
     .membership-card button {
         background: #2a3bdb;
         color: white;
-        border: none;
-        padding: .75rem 1rem;
-        border-radius: 5px;
-        cursor: pointer;
     }
 
     .membership-card button:hover {
-        background-color: gold;
+        background: gold;
         color: black;
     }
 
