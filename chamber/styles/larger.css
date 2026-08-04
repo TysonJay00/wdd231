@@ -62,65 +62,63 @@
         align-items: start;
     }
 
+    .membership-cards {
+        flex-direction: row;
 
-}
+    }
 
+    .membership-card {
+        border: 2px solid #2a3bdb;
+        border-radius: 10px;
+        padding: 1rem;
+        background: #f5f5f5;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
 
-.membership-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-
-.membership-card {
-    border: 2px solid #2a3bdb;
-    border-radius: 10px;
-    padding: 1rem;
-    background: #f5f5f5;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
-
-    opacity: 0;
-    animation: fadeIn 2s ease forwards;
-}
-
-.membership-card h2 {
-    color: #2a3bdb;
-    margin-top: 0;
-}
-
-.membership-card button {
-    background: #2a3bdb;
-    color: white;
-    border: none;
-    padding: .75rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.membership-card button:hover {
-    background-color: gold;
-    color: black;
-}
-
-@keyframes fadeIn {
-    from {
         opacity: 0;
-        transform: translateY(20px);
+        animation: fadeIn 2s ease forwards;
     }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
+    .membership-card h2 {
+        color: #2a3bdb;
+        margin-top: 0;
     }
-}
+
+    .membership-card button {
+        background: #2a3bdb;
+        color: white;
+        border: none;
+        padding: .75rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .membership-card button:hover {
+        background-color: gold;
+        color: black;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
 
 
 
-/******************discover page******************/
+    /******************discover page******************/
 
-#allplaces {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    #allplaces {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
 
 }
