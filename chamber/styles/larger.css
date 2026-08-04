@@ -112,11 +112,12 @@
         opacity: 1;
         transform: translateY(0);
     }
-
-    footer {
-        min-height: 150px;
-    }
 }
+
+footer {
+    min-height: 150px;
+}
+
 
 /******************discover page******************/
 
