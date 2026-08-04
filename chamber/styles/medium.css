@@ -1,11 +1,10 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 38rem) {
     .home-grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto;
         gap: 1rem;
         margin: 1rem;
-
 
     }
 
@@ -55,16 +54,14 @@
         align-items: flex-start;
     }
 
-    .join-layout {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 2rem;
-        align-items: start;
-    }
-
-
 }
 
+.join-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
 
 .membership-cards {
     display: flex;
@@ -112,16 +109,22 @@
         opacity: 1;
         transform: translateY(0);
     }
-
-    footer {
-        min-height: 150px;
-    }
 }
 
-/******************discover page******************/
+/*****************discover page**************/
 
-#allplaces {
+#allplaces div {
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "photograph name"
+        "photograph description"
+        "photograph location";
+}
+
+@media only screen and (min-width: 38rem) {
+    #allplaces img:hover {
+        box-shadow: 0 0 50px #333;
+    }
 
 }
