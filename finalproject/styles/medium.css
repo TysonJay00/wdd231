@@ -56,11 +56,11 @@
         margin: 8px 0;
     }
 
-    #allvillians {
+    #allvillains {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #allvillians .card {
+    #allvillains .card {
         grid-template-columns: 40% 60%;
         grid-template-areas:
             "image name"
@@ -68,7 +68,7 @@
             "image fact";
     }
 
-    #allvillians .card img {
+    #allvillains .card img {
         height: 100%;
         min-height: 200px;
     }

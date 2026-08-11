@@ -5,9 +5,22 @@
     <link rel="icon" href="bat-favicon.ico" type="image/x-icon">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
-    <meta name="description" content="This is the final project for WDD231">
+    <title>The Batman | The Villains</title>
+    <meta name="description"
+        content="This is villain page for the final project. It contains descriptions about some of Batman's most popular villains.">
     <meta name="author" content="Tyson Wilde">
+
+
+    <meta property="og:title" content="The Batman - Villains">
+    <meta property="og:description"
+        content="Explore Batman's legendary rogues gallery and learn about his most famous villains.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tysonjay00.github.io/wdd231/villain.html">
+    <meta property="og:image" content="https://tysonjay00.github.io/wdd231/images/bane.webp">
+    <meta property="og:image:alt" content="Bane, one of Batman's most famous villains">
+    <meta property="og:site_name" content="The Batman">
+
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +54,7 @@
         <h1>The Villains</h1>
         <h2>Batman's Rogues Gallery</h2>
 
-        <div id="allvillians">
+        <div id="allvillains">
         </div>
 
 
@@ -52,10 +65,42 @@
 
             </select>
 
-            <button id="save">Save Favourite Villian</button>
+            <button type="button" id="save">Save Favourite Villian</button>
 
             <p id="output"></p>
         </section>
+
+        <section class="feedback">
+            <h2>Batman Fan Feedback</h2>
+
+
+            <form action="form.html" method="get">
+                <label for="fan-name">Your Name:</label>
+                <input type="text" id="fan-name" name="name" required>
+
+                <label for="character">Favourite Batman Character:</label>
+                <select id="character" name="character" required>
+                    <option value="">-- Choose a character --</option>
+                    <option value="Batman">Batman</option>
+                    <option value="The Joker">The Joker</option>
+                    <option value="Bane">Bane</option>
+                    <option value="Harley Quinn">Harley Quinn</option>
+                    <option value="Catwoman">Catwoman</option>
+                    <option value="The Riddler">The Riddler</option>
+                    <option value="The Scarecrow">The Scarecrow</option>
+                    <option value="Mr. Freeze">Mr. Freeze</option>
+                    <option value="Poison Ivy">Poison Ivy</option>
+                </select>
+
+                <label for="comments">Why do you like this character?</label>
+                <textarea id="comments" name="comments" rows="5" required></textarea>
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+
+
+        </section>
+
     </main>
 
     <footer>
@@ -81,7 +126,7 @@
 
 
             </div>
-            <a class="references-link" href="references.html">References</a>
+            <a class="references-link" href="references.html">Attributions</a>
 
         </div>
 

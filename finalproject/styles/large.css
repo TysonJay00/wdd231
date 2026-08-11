@@ -65,7 +65,7 @@
         text-align: right;
     }
 
-    #allvillians {
+    #allvillains {
         grid-template-columns: repeat(3, 1fr);
     }
 
