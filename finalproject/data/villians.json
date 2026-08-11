@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Bane",
+        "first-appearance": "Batman: Vengeance of Bane #1 (January 1993)",
+        "fact": "Bane proved to be one of Batman's most physical threats when he broke his back in the comic book 'Knightfall,' causing Batman to rise back up both mentally and physically. Bane is also one of the most intelligent villian's in the rogues gallery.",
+        "image": "images/bane.webp"
+    },
+    {
+        "name": "Ra's Al Ghul",
+        "first-appearance": "Batman #232 'Daughter of the Demon' (June 1971)",
+        "fact": "Ra's Al Ghul has been alive for hundreds of years due to bathing in the Lazareth Pit, giving him the supernatural ability to stay young. He is the leader of the League of Assasins and is the father of Talia Al Ghul, the mother of Batman's son, Damien Wayne.",
+        "image": "images/ras-al-ghul.webp"
+    },
+    {
+        "name": "Mr. Freeze",
+        "first-appearance": "Batman #121 (February 1959)",
+        "fact": "Mr. Freeze, also known as Victor Fries, originally had the name Mr. Zero when he was created. He was a scientist who studied cryonics. His wife Nora had an incurable disease, and with his knowledge on cryonics, he found a way to freeze his wife while still being alive, so he can do the necessary research to save her.",
+        "image": "images/mr-freeze.webp"
+    },
+    {
+        "name": "The Penquin",
+        "first-appearance": "Detective Comics #58 (December 1941)",
+        "fact": "The Penquin, also known as Oswald Copplepot, was ranked #51 in IGN's list of 'Top 100 Comic Book Villians.' The Penquin is Gotham City's most feared and powerful underground crime-boss. With his influence in the city, his iconic purple umbrella, which are also weapons, and his exploding wind-up penquins, he's a great threat to batman, that outmatches brute strength. ",
+        "image": "images/penquin.webp"
+    },
+    {
+        "name": "The Riddler",
+        "first-appearance": "Detective Comics #140 in October 1948",
+        "fact": "The Riddler, also known as Edward Nygma, or Edward Nashton, has one of the most brilliant minds. He knew he was smarter than anyone in any room he was in, and his ego grew to the point of obession. The obession of needing to be the smartest person was nothing compared to when Batman solved his deadly game of riddles, forever seeing Batman as his true rival.",
+        "image": "images/riddler.webp"
+    },
+    {
+        "name": "The Scarecrow",
+        "first-appearance": "World's Finest Comics #3 (1941)",
+        "fact": "The Scarecrow, Also known as Jonathan Crane, was a scientist who studied the psychology of fear and the effects of the mind. Crane developed a hallucinogen that made those who were exposed to it, see their worst fears, and in the worst cases, either drive them insane, or die of a heart attack. Batman has been the only one to successfully overcome Scarecrows drug and stop his mission to cause fear around the city",
+        "image": "images/scarecrow.webp"
+    }
+]

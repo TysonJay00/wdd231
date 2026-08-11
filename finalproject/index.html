@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="bat-favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <meta name="description" content="This is the final project for WDD231">
+    <meta name="author" content="Tyson Wilde">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/bat.svg" alt="Site Logo" width="512" height="512">
+        <span>The Batman</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open Navigation Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="hero.html">The Hero</a></li>
+            <li><a href="villain.html">The Villians</a></li>
+
+        </ul>
+    </nav>
+
+
+    <main>
+        <h1>Home</h1>
+        <h2>History of The Comics</h2>
+
+        <section class="row">
+            <picture>
+                <source src="images/bob-kane.webp" media="(max-width: 768px)">
+                <img src="images/bob-kane-large.webp" class="big-img" alt="Photo of Bob Kane" loading="lazy">
+            </picture>
+
+            <div class="text">
+                <h3>Bob Kane</h3>
+
+                <p>
+                    Robert Kahn was born in New York City on October 24, 1915. He came from Ashkenazi Jewish decent.
+                    He was childhood friends with a cartoonist, and together graduated with the same ambition to
+                    have a career in comics. Once he was an adult, he Legaly changed him to Robert Kane. In 1936 He
+                    started his career into comics, creating original stories for "Wow, What a Magazine!" Kane would
+                    move on to a couple more comic companies incuding "More fun Comics," That would later become
+                    Detective Comics. When World War 2 began, and American Troops went over seas to aide in the war,
+                    There was a need for adventure and excitement from the comic industry. "Action Comics" started
+                    this trend with their new character, Superman. Superman became extremely popular both with
+                    veterans, and civilians. Detective Comics wanted a character to compete with sales, so they went
+                    to their creative staff and asked for ideas for a new superhero go toe to toe with the
+                    "Adventures of Superman." Bob Kane took it upon himself to make that happen. He would succeed
+                    with his new idea, called "The Bat-Man."
+                </p>
+            </div>
+        </section>
+
+        <section class="row-reverse">
+            <picture>
+                <source src="images/batman-no1.webp" media="(max-width: 768px)">
+                <img src="images/batman-no1-large.webp" class="big-img" alt="Photo of first issue of Batman"
+                    loading="lazy">
+            </picture>
+
+            <div class="text">
+                <h3>The Creation of Batman</h3>
+
+                <p>
+                    Bob Kane's physical design of "The Bat-Man" was very different from what he looks like
+                    now. Kane gave him red spandex with black trunks, and a cape that was more realistic to
+                    that of a bat's wings. He also had only a mask that covered around his eyes, letting his
+                    blonde hair flourish in the wind. This design was quite similar to the look of Superman.
+                    The Bat-Man was a street-level crime fighter who took down thugs and participated in
+                    detective work, keeping the core aspect of its publisher, "Detective Comics." Kane
+                    influenced the character from the film character "Zorro", as well as a flying machine
+                    with bat-like wings, and Leonardo Da Vinci's drawing of an ornithopter. At the time,
+                    there was a fellow cartoonist named Bill Finger, who was a good friend of Kane's, and
+                    he invited Finger to see his artwork. Finger was the one who suggested to Kane to give
+                    him a cowl that would cover the majority of his face, and to give him his iconic "bat ears".
+                    He also had the idea to stray away from a look-alike of Superman and keep the characters
+                    physically distinct. Together, they changed the red spandex to grey, and changed the cape
+                    from stiff to more flowing, like Zorro's cape. Bill Finger would become the creative force
+                    of Batman moving forward, writing the backstory of his alter-ego, Bruce Wayne, and the
+                    creation of his sidekick, Robin. In the character's first appearance, Finger would drop
+                    the dash in his name, and would be forever known to this day as "The Batman."
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+
+        <div class="left">
+            <p>Wayne Manor</p>
+            <p>1007 Mountain Drive</p>
+            <p>Gotham City, 033039</p>
+            <p>https://www.dc.com/characters/batman</p>
+            <p>+1-609-884-0219</p>
+        </div>
+        <div class="social-container">
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                        width="16" height="16"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-square.svg"
+                        alt="instagram" width="16" height="16"></a>
+
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linkedin"
+                        width="16" height="16"></a>
+                <a href="https://github.com/TysonJay00/wdd231" target="_blank"><img src="images/github.svg" alt="github"
+                        width="16" height="16"></a>
+
+
+            </div>
+            <a class="references-link" href="references.html">References</a>
+
+        </div>
+
+
+        <div class="right">
+            <p>WDD231 Class Project</p>
+            <p>Tyson Wilde</p>
+            <p>&copy; <span>2026 Final Project of WDD 231</span></p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

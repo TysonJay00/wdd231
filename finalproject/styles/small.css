@@ -1,0 +1,275 @@
+h1 {
+    margin-left: 9px;
+    text-align: left;
+    color: rgb(248, 248, 59);
+    font-family: "Sekuya", sans-serif;
+}
+
+p {
+    font-family: "Libertinus Serif", serif;
+    color: black;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/*************** header ***********/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: solid 1px #eee;
+    column-gap: 8px;
+    color: rgb(248, 248, 59);
+    font-family: "Sekuya", sans-serif;
+
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 3px;
+
+}
+
+header span {
+    display: block;
+    background-color: #001aff;
+    border: 3px solid rgb(248, 248, 59);
+    padding: 0.5rem;
+    font-weight: bold;
+    font-size: 2rem;
+
+
+}
+
+
+/************ hamburger navigation****************/
+
+.hamburger {
+    background: none;
+    border: none;
+    color: rgb(248, 248, 59);
+    cursor: pointer;
+
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 2rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 2rem;
+}
+
+/*************navigation***************/
+
+
+.navigation {
+    background-color: gainsboro;
+    display: none;
+
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 10px;
+    color: black;
+    text-decoration: none;
+    border-bottom: solid 1px rgb(248, 248, 59);
+}
+
+
+
+.navigation a:hover {
+    background-color: rgb(248, 248, 59);
+}
+
+/********************* body******************/
+
+body {
+    background-color: black;
+    color: white;
+    font-size: large;
+
+}
+
+h3 {
+    color: #001aff;
+    font-size: x-large;
+}
+
+
+.row,
+.row-reverse {
+    background-color: white;
+    border: 3px solid rgb(248, 248, 59);
+    padding: 15px;
+    margin: 15px 10px;
+    border-radius: 10px;
+}
+
+.big-img,
+.row-reverse .big-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.text {
+    width: 100%;
+}
+
+
+
+/***************footer****************/
+
+footer {
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    gap: 1rem;
+    min-height: 150px;
+    contain: layout;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 3px solid rgb(248, 248, 59)
+}
+
+.left,
+.right {
+    text-align: center;
+}
+
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 4px;
+
+}
+
+.left p,
+.right p {
+    margin: .15rem 0;
+}
+
+footer p {
+    line-height: 1.2;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.references-link {
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.references-link:hover {
+    color: darkblue;
+}
+
+/*******************villians page ***************************/
+
+#allvillians {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+#allvillians .card {
+    border: 2px solid #999;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid rgb(248, 248, 59);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "image"
+        "name"
+        "appearance"
+        "fact";
+
+
+
+}
+
+#allvillians .card img {
+    grid-area: image;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+#allvillians .card h2 {
+    margin: 15px 15px 15px;
+    grid-area: name;
+    color: #001aff;
+
+}
+
+
+#allvillians .card .first-appearance {
+    grid-area: appearance;
+    margin: 15px 15px 15px;
+}
+
+
+#allvillians .card .fact {
+    grid-area: fact;
+    margin: 15px 15px 15px;
+}

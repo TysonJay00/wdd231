@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="bat-favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <meta name="description" content="This is the final project for WDD231">
+    <meta name="author" content="Tyson Wilde">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css">
+
+    <script src="scripts/villains.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/bat.svg" alt="Site Logo" width="512" height="512">
+        <span>The Batman</span>
+        <button id="ham-btn" class="hamburger" aria-label="Open Navigation Menu"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="hero.html">The Hero</a></li>
+            <li><a href="villain.html" class="active">The Villians</a></li>
+
+        </ul>
+    </nav>
+
+    <main>
+        <h1>The Villains</h1>
+        <h2>Batman's Rogues Gallery</h2>
+
+        <div id="allvillians">
+        </div>
+
+
+        <section class="favourites">
+            <h2>Favourite Batman Villain</h2>
+            <label for="characterSelect">Choose your favourite Villian:</label>
+            <select id="characterSelect">
+
+            </select>
+
+            <button id="save">Save Favourite Villian</button>
+
+            <p id="output"></p>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="left">
+            <p>Wayne Manor</p>
+            <p>1007 Mountain Drive</p>
+            <p>Gotham City, 033039</p>
+            <p>https://www.dc.com/characters/batman</p>
+            <p>+1-609-884-0219</p>
+        </div>
+        <div class="social-container">
+            <div class="social">
+                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook"
+                        width="16" height="16"></a>
+                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-square.svg"
+                        alt="instagram" width="16" height="16"></a>
+
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="images/linkedin.svg" alt="linkedin"
+                        width="16" height="16"></a>
+                <a href="https://github.com/TysonJay00/wdd231" target="_blank"><img src="images/github.svg" alt="github"
+                        width="16" height="16"></a>
+
+
+            </div>
+            <a class="references-link" href="references.html">References</a>
+
+        </div>
+
+
+        <div class="right">
+            <p>WDD231 Class Project</p>
+            <p>Tyson Wilde</p>
+            <p>&copy; <span>2026 Final Project of WDD 231</span></p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
