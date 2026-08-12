@@ -1,14 +1,15 @@
+const getString = window.location.search;
+const info = new URLSearchParams(getString);
+
 const results = document.querySelector("#results");
 
-const params = new URLSearchParams(window.location.search);
+if (results) {
 
-const name = params.get("#name");
-const character = params.get("character");
-const comments = params.get("comments");
-
-if (name && character && comments) {
     results.innerHTML = `
-    <p>Thank you, <strong>${name}</strong>!
-    </p>
-    `
+        <p>Your Name: ${info.get("name")}</p>
+        <p>Your Favourite Batman Villain: ${info.get("character")}</p>
+        <p>Your Comments: ${info.get("comments")}</p>
+        
+    `;
 }
+

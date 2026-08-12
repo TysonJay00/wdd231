@@ -1,5 +1,3 @@
-
-
 const showHere = document.querySelector("#allvillains");
 
 async function getVillains() {
@@ -16,6 +14,7 @@ async function getVillains() {
         displayItems(villains);
 
     } catch (error) {
+
         console.error("Error fetching villain data:", error);
 
         showHere.innerHTML = `
@@ -32,7 +31,7 @@ function displayItems(villains) {
         const card = document.createElement("div");
         card.classList.add("card");
 
-        // Image
+
         const photo = document.createElement("img");
         photo.src = x.image;
         photo.alt = x.name;
@@ -41,14 +40,14 @@ function displayItems(villains) {
         card.appendChild(photo);
 
 
-        // Name
+
         const title = document.createElement("h2");
-        title.innerText = x.name;
+        title.textContent = x.name;
 
         card.appendChild(title);
 
 
-        // First Appearance
+
         const appearance = document.createElement("p");
         appearance.classList.add("first-appearance");
 
@@ -62,102 +61,72 @@ function displayItems(villains) {
         card.appendChild(appearance);
 
 
-        // Fact
+
         const description = document.createElement("p");
         description.classList.add("fact");
-        description.innerText = x.fact;
+        description.textContent = x.fact;
 
         card.appendChild(description);
 
 
-        // Add card to page
+
         showHere.appendChild(card);
     });
 }
 
-getVillains();
+
 
 document.addEventListener("DOMContentLoaded", () => {
-
-    const character = [
-        { name: "The Joker" },
-        { name: "Bane" },
-        { name: "Ra's Al Ghul" },
-        { name: "The Scarecrow" },
-        { name: "The Riddler" },
-        { name: "The Penquin" },
-        { name: "Mr. Freeze" },
-        { name: "Harley Quinn" },
-        { name: "Killer Croc" },
-        { name: "Firefly" },
-        { name: "Catwoman" },
-        { name: "Poison Ivy" },
-        { name: "Man-Bat" },
-        { name: "Two-Face" },
-        { name: "Clayface" }
-    ];
 
     const select = document.querySelector("#characterSelect");
     const button = document.querySelector("#save");
     const output = document.querySelector("#output");
 
-    console.log("Select:", select);
-    console.log("Button:", button);
-    console.log("Output:", output);
-
-
-    function loadCharacter() {
-        select.innerHTML = `<option value="">-- Choose a villain --</option>`;
-
-        character.forEach((villain) => {
-            const option = document.createElement("option");
-
-            option.value = villain.name;
-            option.textContent = villain.name;
-
-            select.appendChild(option);
-        });
+    if (!select || !button || !output) {
+        return;
     }
 
-
     function saveFavourite() {
-        const picked = select.value;
 
-        console.log("You selected:", picked);
+        const character = select.value;
 
-        if (picked === "") {
-            output.textContent = "Please select a villain.";
+        if (character === "") {
+            output.textContent = "Please select a character.";
             return;
         }
 
-        localStorage.setItem("favouriteVillain", picked);
+        localStorage.setItem("favouriteCharacter", character);
 
-        console.log("Saved to localStorage:",
-            localStorage.getItem("favouriteVillain")
-        );
-
-        output.textContent = `Your favourite villain is ${picked}!`;
+        output.textContent =
+            `Your favourite character is ${character}!`;
     }
 
 
     function displayFavourite() {
-        const savedVillain = localStorage.getItem("favouriteVillain");
 
-        console.log("Loaded from localStorage:", savedVillain);
+        const savedCharacter =
+            localStorage.getItem("favouriteCharacter");
 
-        if (savedVillain) {
-            select.value = savedVillain;
-            output.textContent = `Your favourite villain is ${savedVillain}!`;
+        if (savedCharacter) {
+
+            select.value = savedCharacter;
+
+            output.textContent =
+                `Your favourite character is ${savedCharacter}!`;
+
         } else {
-            output.textContent = "No villain has been selected yet.";
+
+            output.textContent =
+                "No favourite character has been saved yet.";
         }
     }
 
 
-    loadCharacter();
-
     displayFavourite();
 
     button.addEventListener("click", saveFavourite);
-
 });
+
+
+
+getVillains();

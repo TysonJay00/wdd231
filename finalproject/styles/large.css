@@ -69,4 +69,10 @@
         grid-template-columns: repeat(3, 1fr);
     }
 
+    .feedback,
+    .submission {
+        max-width: 800px;
+        padding: 2.5rem;
+    }
+
 }
