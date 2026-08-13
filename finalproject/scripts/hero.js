@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const output = document.querySelector("#output");
 
 
-    // Display Robin images
+    
     function displayItems(data) {
 
         data.forEach((x) => {
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
             photo.height = 225;
             photo.loading = "lazy";
 
-            // Event listener for clicking Robin image
+          
             photo.addEventListener("click", () => {
                 showStuff(x);
             });
@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Show Robin information in dialog
+    
     function showStuff(x) {
 
         mytitle.textContent = x.name;
@@ -49,13 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Close dialog
+   
     myclose.addEventListener("click", () => {
         mydialog.close();
     });
 
 
-    // Load Robin choices into select
+    
     function loadCharacter() {
 
         select.innerHTML = `
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Save favourite Robin
+   
     function saveFavourite() {
 
         const picked = select.value;
@@ -99,7 +99,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Display saved favourite Robin
     function displayFavourite() {
 
         const savedRobin =
@@ -120,13 +119,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    // Run functions
+   
     displayItems(robins);
     loadCharacter();
     displayFavourite();
 
 
-    // Event listener for save button
+   
     button.addEventListener("click", saveFavourite);
 
 });

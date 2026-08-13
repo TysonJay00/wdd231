@@ -4,6 +4,8 @@ const showHere = document.querySelector("#allvillains");
 async function getVillains() {
 
     try {
+
+
         const response = await fetch("data/villains.json");
 
         if (!response.ok) {
@@ -27,7 +29,7 @@ async function getVillains() {
 
 function displayItems(villains) {
 
-    // Use the card already in the HTML for the first villain
+
     const firstCard = showHere.querySelector(".card");
 
     villains.forEach((x, index) => {
