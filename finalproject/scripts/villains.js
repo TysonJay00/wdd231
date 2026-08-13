@@ -22,7 +22,7 @@ async function getVillains() {
             <p>Sorry, the villain information could not be loaded.</p>
         `;
     }
-}
+}  
 
 
 function displayItems(villains) {
