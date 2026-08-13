@@ -518,3 +518,11 @@ input:-webkit-autofill {
     outline: 3px solid #ffffff;
     outline-offset: 2px;
 }
+
+.references-link,
+.demo-link {
+    display: inline-block;
+    padding: 10px 12px;
+    min-height: 44px;
+    box-sizing: border-box;
+}
