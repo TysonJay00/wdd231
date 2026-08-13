@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="styles/large.css">
     <link rel="stylesheet" href="styles/medium.css">
 
-    <script src="scripts/villains.js" defer></script>
+    <script type="module" src="scripts/villains.js"></script>
     <script src="scripts/index.js" defer></script>
 </head>
 
@@ -45,7 +45,7 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="hero.html">The Hero</a></li>
-            <li><a href="villain.html" class="active">The Villians</a></li>
+            <li><a href="villain.html" class="active">The Villains</a></li>
 
         </ul>
     </nav>
@@ -67,10 +67,9 @@
                 <label for="fan-name">Your Name:</label>
                 <input type="text" id="fan-name" name="name" required>
 
-                <label for="character">Favourite Batman Character:</label>
+                <label for="character">Favourite Batman Villian:</label>
                 <select id="character" name="character" required>
                     <option value="">-- Choose a character --</option>
-                    <option value="Batman">Batman</option>
                     <option value="The Joker">The Joker</option>
                     <option value="Bane">Bane</option>
                     <option value="Harley Quinn">Harley Quinn</option>
@@ -98,13 +97,18 @@
             <p>Wayne Manor</p>
             <p>1007 Mountain Drive</p>
             <p>Gotham City, 033039</p>
-            <p>https://www.dc.com/characters/batman</p>
+            <p>
+                <a href="https://www.dc.com/characters/batman" target="_blank" rel="noopener">
+                    DC Comics - Batman
+                </a>
+            </p>
             <p>+1-609-884-0219</p>
         </div>
         <div class="social-container">
             <div class="social">
-                <a href="https://www.facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook"
-                        width="16" height="16"></a>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="images/facebook.svg" alt="Facebook" width="16" height="16">
+                </a>
                 <a href="https://www.instagram.com" target="_blank"><img src="images/instagram-square.svg"
                         alt="instagram" width="16" height="16"></a>
 

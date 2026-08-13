@@ -1,13 +1,20 @@
-document.getElementById("lastModified").innerHTML = document.lastModified;
+const lastModified = document.querySelector("#lastModified");
 
-// Store the selected elelments that we are going to use.
+if (lastModified) {
+    lastModified.textContent = document.lastModified;
+}
+
+
 const navbutton = document.querySelector("#ham-btn");
 const navBar = document.querySelector("#nav-bar");
-//toggle the show class on and off
 
-navbutton.addEventListener("click", () => {
-    navbutton.classList.toggle("show");
-    navBar.classList.toggle("show");
-});
+if (navbutton && navBar) {
 
+    navbutton.addEventListener("click", () => {
 
+        navbutton.classList.toggle("show");
+        navBar.classList.toggle("show");
+
+    });
+
+}

@@ -134,8 +134,7 @@ h3 {
     border-radius: 10px;
 }
 
-.big-img,
-.row-reverse .big-img {
+.big-img {
     display: block;
     width: 100%;
     height: auto;
@@ -156,7 +155,6 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 1rem;
     gap: 1rem;
     min-height: 150px;
     contain: layout;
@@ -235,7 +233,6 @@ footer p {
 }
 
 #allvillains .card {
-    border: 2px solid #999;
     background-color: #eee;
     border-radius: 10px;
     overflow: hidden;
@@ -291,8 +288,14 @@ footer p {
     margin: 20px 10px;
 }
 
+
+
 .favourites h2 {
     color: #001aff;
+}
+
+.favourites img:hover {
+    box-shadow: 0 0 50px #333;
 }
 
 .favourites label {
@@ -315,11 +318,23 @@ footer p {
     margin-top: 15px;
 }
 
+#showHere img {
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+#showHere img:hover {
+    box-shadow: 0 0 25px rgb(248, 248, 59);
+    transform: scale(1.03);
+}
+
 /********************* Feedback form and submission page *************8*/
 
 form {
     margin: 1rem 2%;
 }
+
+
 
 form label {
     display: block;
