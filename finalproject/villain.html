@@ -21,15 +21,11 @@
     <meta property="og:site_name" content="The Batman">
 
 
-    <link rel="preload" as="image" href="images/joker.webp" fetchpriority="high">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Sekuya&display=swap" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Serif&family=Sekuya&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/large.css">
-    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/large.css" media="(min-width: 1024px)">
 
     <script type="module" src="scripts/villains.js"></script>
     <script src="scripts/index.js" defer></script>
@@ -55,6 +51,9 @@
         <h2>Batman's Rogues Gallery</h2>
 
         <div id="allvillains">
+            <article class="card">
+                <img src="images/joker.webp" alt="The Joker" width="300" height="400" fetchpriority="high">
+            </article>
         </div>
 
 

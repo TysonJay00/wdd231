@@ -27,16 +27,28 @@ async function getVillains() {
 
 function displayItems(villains) {
 
+    // Use the card already in the HTML for the first villain
+    const firstCard = showHere.querySelector(".card");
+
     villains.forEach((x, index) => {
 
-        const card = document.createElement("div");
-        card.classList.add("card");
+        let card;
 
-        const photo = document.createElement("img");
+        if (index === 0 && firstCard) {
+            card = firstCard;
+        } else {
+            card = document.createElement("article");
+            card.classList.add("card");
+            showHere.appendChild(card);
+        }
+
+        const photo = card.querySelector("img") || document.createElement("img");
+
         photo.src = x.image;
         photo.alt = x.name;
         photo.width = 300;
         photo.height = 400;
+        photo.decoding = "async";
 
         if (index === 0) {
             photo.loading = "eager";
@@ -45,7 +57,9 @@ function displayItems(villains) {
             photo.loading = "lazy";
         }
 
-        card.appendChild(photo);
+        if (!card.contains(photo)) {
+            card.appendChild(photo);
+        }
 
         const title = document.createElement("h2");
         title.textContent = x.name;
@@ -68,8 +82,6 @@ function displayItems(villains) {
         description.textContent = x.fact;
 
         card.appendChild(description);
-
-        showHere.appendChild(card);
     });
 }
 
